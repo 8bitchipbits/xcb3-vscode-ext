@@ -225,7 +225,7 @@ async function activate(context) {
     if (compilerPath && dasmPath) {
         // Inject xcbasic3 to environment variables
         process.env.XCBASIC3_COMPILER = compilerPath;
-
+        process.env.XCBASIC3_DASM = dasmPath;
         // Inject dasm to the PATH
         process.env.PATH = `${path.dirname(dasmPath)}${path.delimiter}${process.env.PATH}`;
     }
