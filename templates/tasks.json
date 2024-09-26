@@ -40,6 +40,7 @@
             "type": "shell",
             "command": "${env:XCBASIC3_COMPILER}",
             "args": [
+                "--dasm=${env:XCBASIC3_DASM}",
                 "${file}",
                 "${fileBasenameNoExtension}.prg"
             ],
